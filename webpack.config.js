@@ -1,4 +1,7 @@
 var path = require("path");
+
+var webpack = require("webpack");
+
 var config = {
   entry: ["./src/index.tsx"],
   output: {
@@ -27,7 +30,14 @@ var config = {
         exclude: /src/,
       },
     ]
-  }
+  },
+  module.exports = {
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false,
+      },
+    })
+};
 };
 
 module.exports = config;
