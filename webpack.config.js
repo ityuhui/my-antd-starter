@@ -1,8 +1,7 @@
-var path = require("path");
+const path = require("path");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-var webpack = require("webpack");
-
-var config = {
+const config = {
   entry: ["./src/index.tsx"],
   output: {
     path: path.resolve(__dirname, "build"),
@@ -31,13 +30,10 @@ var config = {
       },
     ]
   },
-  module.exports = {
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-      },
-    })
-};
+  plugins: [
+    new UglifyJsPlugin()
+  ]
+
 };
 
 module.exports = config;
