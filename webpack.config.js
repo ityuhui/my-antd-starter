@@ -30,9 +30,9 @@ const config = {
       },
     ]
   },
-  plugins: [
-    new UglifyJsPlugin()
-  ]
+  //plugins: [
+  //  new UglifyJsPlugin()
+  //]
 
 };
 
