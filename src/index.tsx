@@ -8,7 +8,7 @@ import FirstComponent from './FirstComponent'
 
 ReactDOM.render(
     <div>
-    <h1>Hello, Welcome to the first page</h1>
+    <h1>Hello, Welcome!</h1>
     <FirstComponent/>
     </div>,
       document.getElementById("root")

@@ -1,7 +1,7 @@
 import * as React from "react";
 let Logo ="https://logrocket.com/img/logo.png";
 
-export default class FirstComponent extends React.Component <{}> {   
+export default class FirstComponent extends React.Component {   
     render() {
             return (
                     <div>
